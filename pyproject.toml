@@ -1,0 +1,23 @@
+[project]
+name = "vibe-smeta"
+version = "0.1.0"
+description = "PDF-планировка → 3D-модель → объёмы → Excel со сверкой источников"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "streamlit>=1.49.0",
+    "numpy>=2.1.0",
+    "pandas>=2.2.3",
+    "plotly>=5.24.1",
+    "openpyxl>=3.1.5",
+    "trimesh>=4.5.0",
+    "pygltflib",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.1",
+]
+
+[tool.uv]
+default-groups = ["dev"]
